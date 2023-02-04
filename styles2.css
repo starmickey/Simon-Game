@@ -1,0 +1,149 @@
+:root {
+    /* Colors */
+    --background-color: #011F3F;
+    --banner-common-background-color: #093360;
+    --banner-common-font-color: #f4f6b5;
+    --banner-emphasis-background-color: #D9F7FA;
+    --banner-emphasis-font-color: black;
+    --banner-big-emphasis-background-color: #FFC759;
+    --banner-big-emphasis-font-color: black;
+    --banner-game-over-background-color: #A31621;
+    --banner-game-over-font-color: white;
+
+    /* Fonts */
+    --main-title-fonts: 'Press Start 2P', cursive;
+    --banner-fonts: 'Consolas','monaco',monospace; 
+
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: white;
+    font-family: var(--banner-fonts);
+    text-align: center;
+}
+
+section {
+    padding: 0.6% 0;
+    margin: auto;
+}
+
+
+
+/* --- Header section --- */
+
+#header {
+    color: white;
+    font-family: var(--main-title-fonts);
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+/* --- Information section --- */
+.information {
+    height: 120px;
+}
+
+/* Instructions */
+.banner {
+    background-color: var(--banner-common-background-color);
+    color: var(--banner-common-font-color);
+    height: 4.5rem;
+    font-size: 2;
+    line-height: 4.5rem;
+    padding: 1rem 0 0;
+    margin: auto;
+    width: 30rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Information */
+#information-showing-pattern {
+    background-color:var(--banner-emphasis-background-color);
+    color: var(--banner-emphasis-font-color);
+}
+
+
+.information-text {
+    font-size: 1.5rem;
+}
+
+
+#information-great {
+    background-color: var(--banner-big-emphasis-background-color);
+    color: var(--banner-big-emphasis-font-color);
+    font-weight: bolder;
+}
+
+/* Statistics */
+#statistics {
+    width: 410px;
+    margin: auto;
+}
+
+/* Game over */
+#information-game-over {
+    background-color: var(--banner-game-over-background-color);
+    color: var(--banner-game-over-font-color);
+    display: none;
+}
+
+
+/* --- Buttons section --- */
+#buttons {
+    height: 410px;
+    width: 440px;
+}
+
+.button {
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    height: 175px;
+    width: 175px;
+    border: 5px solid black;
+    border-radius: 20%;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.button:not(:disabled):hover {
+    color: #FFFFFFAA;
+}
+
+.button:disabled {
+    opacity: 1;
+}
+
+.button.gray {
+    border-color: white;
+    opacity: 0.65;
+}
+
+.button.press {
+    border: 0;
+    height: 185px;
+    width: 185px
+}
+
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
